@@ -1,0 +1,5 @@
+<!--MemberDao-START-->
+    <bean id="memberDao" class="com.angkasa.dao.hibernate.MemberDaoHibernate"/>
+    <!--MemberDao-END-->
+
+    <!-- Add new DAOs here -->

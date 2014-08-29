@@ -1,0 +1,39 @@
+    <!--Member-START-->
+    <table name="member">
+        <column>id</column>
+        <column>coopId</column>
+        <column>description</column>
+        <column>enabled</column>
+        <column>name</column>
+        <column>phoneNo</column>
+        <column>version</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="coopId">DtO</value>
+        <value description="description">MiOtVkEoKoOyFtMvKsXlSwPuUeXuMcFaAmCaGdEhDwAiCbRvBvMvOgNjZgDjUfFpCxPwNjNdPdRuTaKqXuFpWpFpYhKpCuTgJxYgJbUqEqOxGtXzRqXqCaSoZySoYqYrViPvShXaMmEbXwLtZwLfTaCrSkCvVyJfQrLjXfEqAzTxLoYbSuXnKaUyVqVdZvCgQpVpMpVd</value>
+        <value description="enabled">0</value>
+        <value description="name">FyCjWgAwIfTvTwCnDdInWwMnZkXhTpIcHqIpFeAjSbEnGrVjTn</value>
+        <value description="phoneNo">GlKaUgPdFmDo</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="coopId">PvX</value>
+        <value description="description">NdNxMoAxKbMsWjFqYqKhTjTsOnEjJvNpPbIwQbTjYpXhQwSkGlNhMtAuVwZfSzLrAeKnPxGnJtEwFtBfPjRgBoCgXyHbAjUlMzJkWgPiEpAgAlNaLuRbVuZhQqOlEpGmNrPoKwIgTaXbNkLfKdTxRnLaUvUwUlEjQfSrWmKmTrXtQhQgVhKuJkMnOpKyTnAkQjLaCwSg</value>
+        <value description="enabled">0</value>
+        <value description="name">IjJrIkOpIlEkHcVrHkIqTrUyPfVfZySsJcGqJoGfQaDbHfPvGs</value>
+        <value description="phoneNo">GaLxAnQrMjHg</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="coopId">HuB</value>
+        <value description="description">HqPkBeUpBfAuClZuWcAiMsThNjNcPxHqHdSiSmSsRzBbMuYxDbLnHtYwImHhAaKnUcKwQmWqTsDeSiAvBlOhMmMhDdWeWuMkHqZgUhBaDoOoUwSyZaIaHpYaUeZqGwVdTdFoXvKqSzGhFfYwYqRjEdYfErMgWqZbNwNsYdFtZsClLpFzSbEuDuWiYxXaSnBmQzXjLoUq</value>
+        <value description="enabled">0</value>
+        <value description="name">ZlAtIdHcCuSgJrBuIfMxItQpEqRlFvUpAjUmApWhRtXzDaGzLp</value>
+        <value description="phoneNo">DxGdKmZmZkLs</value>
+        <value description="version">1</value>
+    </row>
+    </table>
+    <!--Member-END-->
+</dataset>

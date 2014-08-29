@@ -1,0 +1,101 @@
+    <!--Member-START-->
+    <!-- runs member-related tests -->
+    <target name="MemberTests"
+            depends="SearchMembers,EditMember,SaveMember,AddMember,DeleteMember"
+            description="Call and executes all member test cases (targets)">
+        <echo>Successfully ran all Member UI tests!</echo>
+    </target>
+
+    <!-- Verify the members list screen displays without errors -->
+    <target name="SearchMembers" description="Tests search for and displaying all members">
+        <webtest name="searchMembers">
+            &config;
+            <steps>
+                &login;
+                <invoke description="click View Member link" url="/members"/>
+                <verifytitle description="we should see the memberList title"
+                    text=".*${memberList.title}.*" regex="true"/>
+                <setinputfield description="set search term" name="q" value="*"/>
+                <clickbutton label="${button.search}" description="Click Search"/>
+                <verifytitle description="we should see the memberList title"
+                    text=".*${memberList.title}.*" regex="true"/>
+            </steps>
+        </webtest>
+    </target>
+
+    <!-- Verify the edit member screen displays without errors -->
+    <target name="EditMember" description="Tests editing an existing Member's information">
+        <webtest name="editMember">
+            &config;
+            <steps>
+                &login;
+                <invoke description="View Member List" url="/members"/>
+                <clicklink label="-1" description="Click edit link"/>
+                <verifytitle description="we should see the memberDetail title"
+                    text=".*${memberDetail.title}.*" regex="true"/>
+            </steps>
+        </webtest>
+    </target>
+
+    <!-- Edit a member and then save -->
+    <target name="SaveMember" description="Tests editing and saving a member">
+        <webtest name="saveMember">
+            &config;
+            <steps>
+                &login;
+                <invoke description="click Edit Member link" url="/memberform?id=-1"/>
+                <verifytitle description="we should see the memberDetail title"
+                    text=".*${memberDetail.title}.*" regex="true"/>
+
+                <!-- update some of the required fields -->
+                <setInputField description="set coopId" name="coopId" value="SiZ"/>
+                <setInputField description="set name" name="name" value="FiCnHfLdMlDhJgLtRrAkBwSpJtJwPvZnIyVwMzDuNlKoIwOuIz"/>
+                <setInputField description="set phoneNo" name="phoneNo" value="JiEwIiNrWnVp"/>
+
+                <clickbutton label="${button.save}" description="Click Save"/>
+                <verifytitle description="Page re-appears if save successful"
+                    text=".*${memberDetail.title}.*" regex="true"/>
+                <verifytext description="verify success message" text="${member.updated}"/>
+            </steps>
+        </webtest>
+    </target>
+
+    <!-- Add a new Member -->
+    <target name="AddMember" description="Adds a new Member">
+        <webtest name="addMember">
+            &config;
+            <steps>
+                &login;
+                <invoke description="click Add Button" url="/memberform"/>
+                <verifytitle description="we should see the memberDetail title"
+                    text=".*${memberDetail.title}.*" regex="true"/>
+
+                <!-- enter required fields -->
+                <setInputField description="set coopId" name="coopId" value="YpI"/>
+                <setInputField description="set name" name="name" value="UrNyDaUrEdMjZeAyDqFsEdUyZjCoDzHtUjXqNhNxHxSbSpMeYw"/>
+                <setInputField description="set phoneNo" name="phoneNo" value="UdTdDdXoUiFq"/>
+
+                <clickbutton label="${button.save}" description="Click button 'Save'"/>
+                <verifytitle description="Member List appears if save successful"
+                    text=".*${memberList.title}.*" regex="true"/>
+                <verifytext description="verify success message" text="${member.added}"/>
+            </steps>
+        </webtest>
+    </target>
+
+    <!-- Delete existing member -->
+    <target name="DeleteMember" description="Deletes existing Member">
+        <webtest name="deleteMember">
+            &config;
+            <steps>
+                &login;
+                <invoke description="click Edit Member link" url="/memberform?id=-1"/>
+                <prepareDialogResponse description="Confirm delete" dialogType="confirm" response="true"/>
+                <clickbutton label="${button.delete}" description="Click button 'Delete'"/>
+                <verifyNoDialogResponses/>
+                <verifytitle description="display Member List" text=".*${memberList.title}.*" regex="true"/>
+                <verifytext description="verify success message" text="${member.deleted}"/>
+            </steps>
+        </webtest>
+    </target>    <!--Member-END-->
+</project>

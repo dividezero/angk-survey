@@ -3,10 +3,10 @@
 
     <!--database>
         <jndi-name>jdbc/appfuse</jndi-name>
-        <driver type="oracle.jdbc.OracleDriver">
-            <url>jdbc:oracle:thin:@192.168.56.101:1521:orcl</url>
-            <user>rceprod</user>
-            <password>rceprod</password>
+        <driver type="com.mysql.jdbc.Driver">
+            <url>jdbc:mysql://localhost/angkasa?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true</url>
+            <user>angkasa</user>
+            <password>angkasa</password>
         </driver>
     </database-->
 </web-app>

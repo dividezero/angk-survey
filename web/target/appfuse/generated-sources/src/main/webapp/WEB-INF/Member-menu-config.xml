@@ -1,0 +1,4 @@
+        <!--Member-START-->
+        <Menu name="MemberMenu" title="memberList.title" page="/members"/>
+        <!--Member-END-->
+    </Menus>

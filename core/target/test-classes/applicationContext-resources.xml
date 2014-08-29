@@ -14,10 +14,10 @@
     </bean>
 
     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="driverClassName" value="oracle.jdbc.OracleDriver"/>
-        <property name="url" value="jdbc:oracle:thin:@192.168.56.101:1521:orcl"/>
-        <property name="username" value="rceprod"/>
-        <property name="password" value="rceprod"/>
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost/angkasa?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true"/>
+        <property name="username" value="angkasa"/>
+        <property name="password" value="angkasa"/>
     </bean>
 
 </beans>

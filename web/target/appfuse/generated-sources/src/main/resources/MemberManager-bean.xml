@@ -1,0 +1,7 @@
+<!--MemberManager-START-->
+    <bean id="memberManager" class="com.angkasa.service.impl.MemberManagerImpl">
+        <constructor-arg ref="memberDao"/>
+    </bean>
+    <!--MemberManager-END-->
+
+    <!-- Add new Managers here -->

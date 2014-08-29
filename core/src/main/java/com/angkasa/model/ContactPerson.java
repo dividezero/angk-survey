@@ -29,7 +29,6 @@ public class ContactPerson extends BaseObject implements Serializable {
 	private String description;
 	private String email;
 	private String workPhoneNo;
-
 	private Integer version;
 
 	public ContactPerson() {

@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -33,6 +35,7 @@ public class Member extends BaseObject implements Serializable {
 
 	private String phoneNo;
 	private String coopId;
+	private String coop;
 	private String gender; // Constants.GENDER_MALE or Constants.GENDER_FEMALE
 	private String icNumber;
 	private String membershipNo;
@@ -92,14 +95,50 @@ public class Member extends BaseObject implements Serializable {
 		this.phoneNo = phoneNo;
 	}
 
-	@Column(name = "coopId", nullable = false, length = 3)
-	@Field
+	@Column(name = "coop_id", nullable = false)
 	public String getCoopId() {
 		return coopId;
 	}
 
 	public void setCoopId(String coopId) {
 		this.coopId = coopId;
+	}
+
+	@ManyToOne
+    @JoinColumn(name = "coop_id", referencedColumnName = "id", insertable = false, updatable = false)
+	public String getCoop() {
+		return coop;
+	}
+
+	public void setCoop(String coop) {
+		this.coop = coop;
+	}
+
+	@Column(name = "gender", nullable = false, length = 1)
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	@Column(name = "icNumber", nullable = false, length = 12)
+	public String getIcNumber() {
+		return icNumber;
+	}
+
+	public void setIcNumber(String icNumber) {
+		this.icNumber = icNumber;
+	}
+
+	@Column(name = "icNumber", nullable = false, length = 10)
+	public String getMembershipNo() {
+		return membershipNo;
+	}
+
+	public void setMembershipNo(String membershipNo) {
+		this.membershipNo = membershipNo;
 	}
 
 	@Version
@@ -125,6 +164,7 @@ public class Member extends BaseObject implements Serializable {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((coop == null) ? 0 : coop.hashCode());
 		result = prime * result + ((coopId == null) ? 0 : coopId.hashCode());
 		result = prime * result
 				+ ((description == null) ? 0 : description.hashCode());
@@ -154,6 +194,11 @@ public class Member extends BaseObject implements Serializable {
 			if (other.address != null)
 				return false;
 		} else if (!address.equals(other.address))
+			return false;
+		if (coop == null) {
+			if (other.coop != null)
+				return false;
+		} else if (!coop.equals(other.coop))
 			return false;
 		if (coopId == null) {
 			if (other.coopId != null)
@@ -209,9 +254,10 @@ public class Member extends BaseObject implements Serializable {
 	public String toString() {
 		return "Member [id=" + id + ", name=" + name + ", description="
 				+ description + ", address=" + address + ", phoneNo=" + phoneNo
-				+ ", coopId=" + coopId + ", gender=" + gender + ", icNumber="
-				+ icNumber + ", membershipNo=" + membershipNo + ", version="
-				+ version + ", enabled=" + enabled + "]";
+				+ ", coopId=" + coopId + ", coop=" + coop + ", gender="
+				+ gender + ", icNumber=" + icNumber + ", membershipNo="
+				+ membershipNo + ", version=" + version + ", enabled="
+				+ enabled + "]";
 	}
 
 }
