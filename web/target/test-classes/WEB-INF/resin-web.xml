@@ -1,0 +1,13 @@
+<web-app id="survey-web-1.0-SNAPSHOT">
+    <jsp fast-jstl="false"/>
+
+    <!--database>
+        <jndi-name>jdbc/appfuse</jndi-name>
+        <driver type="oracle.jdbc.OracleDriver">
+            <url>jdbc:oracle:thin:@192.168.56.101:1521:orcl</url>
+            <user>rceprod</user>
+            <password>rceprod</password>
+        </driver>
+    </database-->
+</web-app>
+

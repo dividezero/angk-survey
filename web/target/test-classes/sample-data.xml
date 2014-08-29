@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <table name="app_user">
+        <column>id</column>
+        <column>username</column>
+        <column>password</column>
+        <column>first_name</column>
+        <column>last_name</column>
+        <column>address</column>
+        <column>city</column>
+        <column>country</column>
+        <column>email</column>
+        <column>phone_number</column>
+        <column>postal_code</column>
+        <column>province</column>
+        <column>website</column>
+        <column>password_hint</column>
+        <column>version</column>
+        <column>account_enabled</column>
+        <column>account_expired</column>
+        <column>account_locked</column>
+        <column>credentials_expired</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="username">user</value>
+            <value description="password">$2a$10$CnQVJ9bsWBjMpeSKrrdDEeuIptZxXrwtI6CZ/OgtNxhIgpKxXeT9y</value>
+            <value description="first_name">Tomcat</value>
+            <value description="last_name">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt_raible@yahoo.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://tomcat.apache.org</value>
+            <value description="password_hint"><![CDATA[A male kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="username">admin</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Matt</value>
+            <value description="last_name">Raible</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">matt@raibledesigns.com</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>
+        <row>
+            <value description="id">-3</value>
+            <value description="username">two_roles_user</value>
+            <value description="password">$2a$10$bH/ssqW8OhkTlIso9/yakubYODUOmh.6m5HEJvcBq3t3VdBh7ebqO</value>
+            <value description="first_name">Two Roles</value>
+            <value description="last_name">User</value>
+            <value description="address"></value>
+            <value description="city">Denver</value>
+            <value description="country">US</value>
+            <value description="email">two_roles_user@appfuse.org</value>
+            <value description="phone_number"></value>
+            <value description="postal_code">80210</value>
+            <value description="province">CO</value>
+            <value description="website">http://raibledesigns.com</value>
+            <value description="password_hint"><![CDATA[Not a female kitty.]]></value>
+            <value description="version">1</value>
+            <value description="account_enabled">1</value>
+            <value description="account_expired">0</value>
+            <value description="account_locked">0</value>
+            <value description="credentials_expired">0</value>
+        </row>        
+    </table>
+    <table name="role">
+        <column>id</column>
+        <column>name</column>
+        <column>description</column>
+        <row>
+            <value description="id">-1</value>
+            <value description="name">ROLE_ADMIN</value>
+            <value description="description"><![CDATA[Administrator role (can edit Users)]]></value>
+        </row>
+        <row>
+            <value description="id">-2</value>
+            <value description="name">ROLE_USER</value>
+            <value description="description"><![CDATA[Default role for all Users]]></value>
+        </row>
+    </table>
+    <table name="user_role">
+        <column>user_id</column>
+        <column>role_id</column>
+        <row>
+            <value description="user_id">-1</value>
+            <value description="role_id">-2</value>
+        </row>
+        <row>
+            <value description="user_id">-2</value>
+            <value description="role_id">-1</value>
+        </row>
+        <row>
+            <value description="user_id">-3</value>
+            <value description="role_id">-1</value>
+        </row>
+        <row>
+            <value description="user_id">-3</value>
+            <value description="role_id">-2</value>
+        </row>
+    </table>
+    <!--ContactPerson-START-->
+    <table name="app_user">
+        <column>id</column>
+        <column>description</column>
+        <column>email</column>
+        <column>name</column>
+        <column>version</column>
+        <column>workPhone</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="description">UvKdJiHdXwAuQlCoWeRfEdBxDwGrKzAoHlStHdDxYmCxUcCpUaRdLoXpPuIrLmZnIaKmClXaSqPuYoQlQrVoAsLyUgXaDfEmMaOzOkLvSeGrDpZjTjQsPbHwZiLzZiGmSwZaNhBpZhLqLaBxSwBgVzLwEtOfVdJtVkLoNhDcIhEuDjWfRnGzOzHeIfPlSwZjQrXwRkVm</value>
+        <value description="email">JrBuPjZsYvJnKgFjRbGr</value>
+        <value description="name">IgDzExAzSnZiLkTrFeIzUtWkLlUyMhTrLuWuBqChNtHaXnLqLd</value>
+        <value description="version">1</value>
+        <value description="workPhone">BzRwTlDqBiUp</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="description">YhXzQxIjZsOfWjRvZpLvBgMgOiUrDbWySqPyOtIfKnAvYiAzSiPcHyCzYfXoYkIcAbRgEbBuOcRkShQvYoQtPgKpBaXiPwXoNoJxDrMoYmKgPeWxRsQxWaFeYrIbGhKuDiPuTyKkHiWlTgGfGhQhAtScEnXzFyWqHuBfWgIaZbGdUuIiQiDfUrBwUlBhIfWzUmRrAtSi</value>
+        <value description="email">PgNhPiRpTbHdKcFgOoVn</value>
+        <value description="name">JcHoTsAzUkNjOpRlSwEuAcViNfAlGvSxEhEiXwFoPiVyMjNaPn</value>
+        <value description="version">1</value>
+        <value description="workPhone">QwGoSuSwNbLl</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="description">YlKhYtZqXbKdViCcMkOlLyWoTnSuSmIrDlDaSlPuTeZaFeFrQdOrQqCyLwKzEoCyUiIkCdBuUrImIxCdGbMuGqTlLjSjIiBeOrQmZzUiKtDtFbXoKeOgVnWqQpYqTeQgIjMkRrSeJqXiJyTlRlBjFqDtDiHmThCzVeOcNjXhBkArCyHvOwIjMqZfAdPyFcRyFoFxHoWj</value>
+        <value description="email">DyAkYjPfNbZrMwIrTzJe</value>
+        <value description="name">RgHzIpHpJbKdIlLjIdFlZsFqAcLiJdBeVrXsTgJlPtMpLyNhRo</value>
+        <value description="version">1</value>
+        <value description="workPhone">IuWmTeZuZkHl</value>
+    </row>
+    </table>
+    <!--ContactPerson-END-->
+    <!--CoopBusinessType-START-->
+    <table name="coop_business_type">
+        <column>id</column>
+        <column>code</column>
+        <column>description</column>
+        <column>name</column>
+        <column>version</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="code">Ri</value>
+        <value description="description">ZgUyEdRfAeIuGfNhJmHtClPqOsFhYjJpMmOvEtBnRxWdMdGnWmKiEkNgZwItHpDpHwZyNdUsOlUmNjBsZdAkNeMjJpImQaSzFlMgHgJxKfHaSnGaChKjXsExHcHbLtKlAfPaFaTbMeZaCnSdApFnWdZvDbJeUsJuYfEdHzDiOtSxWhBtPyShNmTkGtLwUcEoMqPiCaDo</value>
+        <value description="name">LfGvXpMtRqJxYtFtKpGiPnQjIpKyBlDsJiMjShPiHdFbLyHvQx</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="code">Mo</value>
+        <value description="description">EhSaZqBvWiVcAdWmPkPrAxDcLoXjCtKnPtXoXxBoMzBmQbXtXbRkWqVeFfVdIfOoVfTpPnEtGvZkHgEzYfQdUpJtJqDtWwTzDtOaNwDvBnIcMcHrPsVbIhSqBwLgTlJwHpNxLlIuZaBgEeLfOtKaQjYsTqTgSwUfWpAnZcXpEkDhShZzVnMxMsEmIzJjKkFeQxZvKyAj</value>
+        <value description="name">YpVtGuEyGyCxWzClAjCoRePwKbXcRfQfZhRdKeMiIwXmMcSyDq</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="code">Vf</value>
+        <value description="description">NsYbBdRsQvByAkMsByVlPmJjWfEfPsDcBfVjThYlUlCoQpXsMrIgUxFqIxCrXyInOmBnNmSrXwKjJcQvSgBlOyDlRmVmKiPgFoUbXnZeEkCrZsUzFsHoMkOpMtIfSpObPgRbEfZwLuKxCbJbNvRpZhXrMvZcLoVvYiKlJyEbSaWqAkFiQiFpWnZiHfVcCwHzCoOaYkBu</value>
+        <value description="name">DuQyUbCuHdRtZuOpFlXqHzYzDhLmPnUkVaYeOvAuJdFmAqMxOm</value>
+        <value description="version">1</value>
+    </row>
+    </table>
+    <!--CoopBusinessType-END-->
+    <!--Coop-START-->
+    <table name="coop">
+        <column>id</column>
+        <column>coopId</column>
+        <column>description</column>
+        <column>enabled</column>
+        <column>incorporatedDate</column>
+        <column>name</column>
+        <column>phoneNo</column>
+        <column>phoneNo2</column>
+        <column>phoneNo3</column>
+        <column>version</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="coopId">NjB</value>
+        <value description="description">YeZuXtGyJuDiFmToXqXoUdQyShRnVrGqLoWoUfHtJaNrKgNcZkYiMfQdGkSwBcQaCwNgNgLnLfPuRlNkPyZkPyIuIqXmGeYjBjNbMlVhWsNeMhMuTxSzAqEcJjDuXhNrGgPnQuVqWhNpAvDzIgEwMbKuQuXvEuSzJhNwVuRvYoObPeRiEuPpWnSlUhXsSeDqQqEjAtGg</value>
+        <value description="enabled">0</value>
+        <value description="incorporatedDate">2014-08-17</value>
+        <value description="name">MbSlXyClEdUaWmHgNtRgRuFdKsVcXlLeTgGdYvUySaNjMeCpSo</value>
+        <value description="phoneNo">SuZjCyQvXtUv</value>
+        <value description="phoneNo2">DvCwSgNmPjMn</value>
+        <value description="phoneNo3">FzDrInQgTlBj</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="coopId">RpS</value>
+        <value description="description">JrZvIgLcQjRyVyRjYzXwYfRlFfIkXvInWjUcYiXkBuUzGjQpPvGwMxHzPcIsPaLuBoFnYuJoQyZyJcTiZbEeWxSvRbZfBgMtXuHmUfHfZcUbWyCfKdXqWlTlIlMgCvGtNhFdBeOjVlHkTtUmKlBeMeXwRbEzZaJqTiWoXuFeOqHoRlNaVsChPkZhExFlXiRuGeKpOeWs</value>
+        <value description="enabled">0</value>
+        <value description="incorporatedDate">2014-08-17</value>
+        <value description="name">LrKvNeFxBjKtObAfUeJySoMwWaImEqXeCgWvLuEcHhCrFkGrQm</value>
+        <value description="phoneNo">ClCoLrDsNdCg</value>
+        <value description="phoneNo2">OhZvUyXjIlHu</value>
+        <value description="phoneNo3">NoAsPtNlDoRy</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="coopId">DaC</value>
+        <value description="description">VvKwXoYfSwLeOwSkTsAqFeIzPzLtIsJjZtUbJqByOwMwEvHqGgKoLfBsEuDtEtBkPiFdNuQmUvRxGjPaEmSbScUwPmEqDlMdMhBhFeKxWhOrDwHnEmXnUvYtVhGvYcXrFsUcZwEeDsWkBpMtXbLsAkHcKeMzKpXlEkHuGlZzKiHwSmWgOeXqMzBaEwKrWpZnMdVjQbAg</value>
+        <value description="enabled">0</value>
+        <value description="incorporatedDate">2014-08-17</value>
+        <value description="name">McFcDaUyMkBnMrBqUxVjLlFzOsGnQlDtGaGwDvCqGwCwLdIuEa</value>
+        <value description="phoneNo">LtIsQaIjDaMu</value>
+        <value description="phoneNo2">MyPoDsMwEhVd</value>
+        <value description="phoneNo3">BcSaWbHyWhJu</value>
+        <value description="version">1</value>
+    </row>
+    </table>
+    <!--Coop-END-->
+</dataset>
+
+
+

@@ -409,7 +409,7 @@
         <commons.io.version>2.4</commons.io.version>
         <displaytag.version>1.2</displaytag.version>
         <spring.version>4.0.0.RELEASE</spring.version>
-        <springmodules.validation.version>0.8</springmodules.validation.version>
+        <springmodules.validation.version>0.8.mod</springmodules.validation.version>
 
         <!-- Testing dependency versions -->
         <cargo.version>1.4.4</cargo.version>
@@ -443,8 +443,8 @@
         <jdbc.version>5.1.27</jdbc.version>
         <jdbc.driverClassName>com.mysql.jdbc.Driver</jdbc.driverClassName>
         <jdbc.url>jdbc:mysql://localhost/${db.name}?createDatabaseIfNotExist=true&amp;amp;useUnicode=true&amp;amp;characterEncoding=utf-8&amp;amp;autoReconnect=true</jdbc.url>
-        <jdbc.username>root</jdbc.username>
-        <jdbc.password/>
+        <jdbc.username>angkasa</jdbc.username>
+	<jdbc.password>angkasa</jdbc.password>
 
         <!-- Properties calculated by AppFuse when running full-source plugin -->
         <aspectj.version>1.7.4</aspectj.version>

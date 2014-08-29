@@ -42,7 +42,7 @@ public class Coop extends BaseObject implements Serializable {
 	private String phoneNo2;
 	private String phoneNo3;
 
-	private String coopId;
+	private String coopCode;
 	private Set<CoopBusinessType> coopBusinessTypes;
 
 	private Date incorporatedDate;
@@ -54,7 +54,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	public Long getId() {
 		return id;
 	}
@@ -64,7 +64,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@Column(name = "name", nullable = false, length = 50)
-    @Field
+	@Field
 	public String getName() {
 		return name;
 	}
@@ -74,7 +74,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@Column(name = "description", nullable = true, length = 200)
-    @Field
+	@Field
 	public String getDescription() {
 		return description;
 	}
@@ -84,7 +84,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@Embedded
-    @IndexedEmbedded
+	@IndexedEmbedded
 	public Address getAddress() {
 		return address;
 	}
@@ -94,7 +94,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@OneToMany(targetEntity = ContactPerson.class, fetch = FetchType.EAGER)
-    @JoinColumn(name = "contactPerson_id", updatable = false)
+	@JoinColumn(name = "contactPerson_id", updatable = false)
 	public Set<ContactPerson> getContactPersons() {
 		return contactPersons;
 	}
@@ -130,18 +130,18 @@ public class Coop extends BaseObject implements Serializable {
 		this.phoneNo3 = phoneNo3;
 	}
 
-	@Column(name = "coopId", nullable = false, length = 3)
-    @Field
-	public String getCoopId() {
-		return coopId;
+	@Column(name = "coopCode", nullable = false, unique = true, length = 3)
+	@Field
+	public String getCoopCode() {
+		return coopCode;
 	}
 
-	public void setCoopId(String coopId) {
-		this.coopId = coopId;
+	public void setCoopId(String coopCode) {
+		this.coopCode = coopCode;
 	}
 
 	@OneToMany(targetEntity = CoopBusinessType.class, fetch = FetchType.EAGER)
-    @JoinColumn(name = "coopBusinessType_id", updatable = false)
+	@JoinColumn(name = "coopBusinessType_id", updatable = false)
 	public Set<CoopBusinessType> getCoopBusinessTypes() {
 		return coopBusinessTypes;
 	}
@@ -151,7 +151,7 @@ public class Coop extends BaseObject implements Serializable {
 	}
 
 	@Column(name = "incorporatedDate", nullable = true)
-    @Temporal(javax.persistence.TemporalType.DATE)
+	@Temporal(javax.persistence.TemporalType.DATE)
 	public Date getIncorporatedDate() {
 		return incorporatedDate;
 	}
@@ -189,7 +189,7 @@ public class Coop extends BaseObject implements Serializable {
 				* result
 				+ ((coopBusinessTypes == null) ? 0 : coopBusinessTypes
 						.hashCode());
-		result = prime * result + ((coopId == null) ? 0 : coopId.hashCode());
+		result = prime * result + ((coopCode == null) ? 0 : coopCode.hashCode());
 		result = prime * result
 				+ ((description == null) ? 0 : description.hashCode());
 		result = prime * result + (enabled ? 1231 : 1237);
@@ -231,10 +231,10 @@ public class Coop extends BaseObject implements Serializable {
 				return false;
 		} else if (!coopBusinessTypes.equals(other.coopBusinessTypes))
 			return false;
-		if (coopId == null) {
-			if (other.coopId != null)
+		if (coopCode == null) {
+			if (other.coopCode != null)
 				return false;
-		} else if (!coopId.equals(other.coopId))
+		} else if (!coopCode.equals(other.coopCode))
 			return false;
 		if (description == null) {
 			if (other.description != null)
@@ -286,7 +286,7 @@ public class Coop extends BaseObject implements Serializable {
 		return "Coop [id=" + id + ", name=" + name + ", description="
 				+ description + ", address=" + address + ", contactPersons="
 				+ contactPersons + ", phoneNo=" + phoneNo + ", phoneNo2="
-				+ phoneNo2 + ", phoneNo3=" + phoneNo3 + ", coopId=" + coopId
+				+ phoneNo2 + ", phoneNo3=" + phoneNo3 + ", coopId=" + coopCode
 				+ ", coopBusinessTypes=" + coopBusinessTypes
 				+ ", incorporatedDate=" + incorporatedDate + ", version="
 				+ version + ", enabled=" + enabled + "]";

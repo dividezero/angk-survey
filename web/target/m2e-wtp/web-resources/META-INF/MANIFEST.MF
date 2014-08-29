@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: AppFuse Modular Application - Web (Spring MVC)
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor-Id: com.angkasa
+Build-Jdk: 1.7.0_15
+Built-By: hazlan
+Created-By: Maven Integration for Eclipse
+

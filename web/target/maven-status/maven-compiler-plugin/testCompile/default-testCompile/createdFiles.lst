@@ -1,0 +1,15 @@
+com/angkasa/webapp/controller/UserFormControllerTest.class
+com/angkasa/webapp/controller/BaseControllerTestCase.class
+com/angkasa/webapp/controller/ContactPersonFormControllerTest.class
+com/angkasa/webapp/controller/CoopBusinessTypeFormControllerTest.class
+com/angkasa/webapp/controller/PasswordHintControllerTest.class
+com/angkasa/webapp/controller/CoopFormControllerTest.class
+com/angkasa/webapp/controller/ContactPersonControllerTest.class
+com/angkasa/webapp/filter/LocaleFilterTest.class
+com/angkasa/webapp/listener/StartupListenerTest.class
+com/angkasa/webapp/controller/CoopControllerTest.class
+com/angkasa/webapp/controller/UserControllerTest.class
+com/angkasa/webapp/controller/UpdatePasswordControllerTest.class
+com/angkasa/webapp/controller/CoopBusinessTypeControllerTest.class
+com/angkasa/webapp/filter/MockFilterChain.class
+com/angkasa/webapp/controller/SignupControllerTest.class

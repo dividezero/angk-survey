@@ -86,4 +86,9 @@ public final class Constants {
      * @deprecated No longer used to set themes.
      */
     public static final String CSS_THEME = "csstheme";
+    
+    // Gender
+    public static final String GENDER_MALE = "M";
+    public static final String GENDER_FEMALE = "F";
+    
 }
