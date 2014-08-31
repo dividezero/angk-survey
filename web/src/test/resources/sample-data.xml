@@ -120,7 +120,7 @@
         </row>
     </table>
     <!--ContactPerson-START-->
-    <table name="app_user">
+    <table name="contact_person">
         <column>id</column>
         <column>description</column>
         <column>email</column>
@@ -186,7 +186,7 @@
     <!--Coop-START-->
     <table name="coop">
         <column>id</column>
-        <column>coopId</column>
+        <column>coopCode</column>
         <column>description</column>
         <column>enabled</column>
         <column>incorporatedDate</column>
@@ -197,7 +197,7 @@
         <column>version</column>
     <row>
         <value description="id">-1</value>
-        <value description="coopId">NjB</value>
+        <value description="coopCode">NjB</value>
         <value description="description">YeZuXtGyJuDiFmToXqXoUdQyShRnVrGqLoWoUfHtJaNrKgNcZkYiMfQdGkSwBcQaCwNgNgLnLfPuRlNkPyZkPyIuIqXmGeYjBjNbMlVhWsNeMhMuTxSzAqEcJjDuXhNrGgPnQuVqWhNpAvDzIgEwMbKuQuXvEuSzJhNwVuRvYoObPeRiEuPpWnSlUhXsSeDqQqEjAtGg</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -209,7 +209,7 @@
     </row>
     <row>
         <value description="id">-2</value>
-        <value description="coopId">RpS</value>
+        <value description="coopCode">RpS</value>
         <value description="description">JrZvIgLcQjRyVyRjYzXwYfRlFfIkXvInWjUcYiXkBuUzGjQpPvGwMxHzPcIsPaLuBoFnYuJoQyZyJcTiZbEeWxSvRbZfBgMtXuHmUfHfZcUbWyCfKdXqWlTlIlMgCvGtNhFdBeOjVlHkTtUmKlBeMeXwRbEzZaJqTiWoXuFeOqHoRlNaVsChPkZhExFlXiRuGeKpOeWs</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -221,7 +221,7 @@
     </row>
     <row>
         <value description="id">-3</value>
-        <value description="coopId">DaC</value>
+        <value description="coopCode">DaC</value>
         <value description="description">VvKwXoYfSwLeOwSkTsAqFeIzPzLtIsJjZtUbJqByOwMwEvHqGgKoLfBsEuDtEtBkPiFdNuQmUvRxGjPaEmSbScUwPmEqDlMdMhBhFeKxWhOrDwHnEmXnUvYtVhGvYcXrFsUcZwEeDsWkBpMtXbLsAkHcKeMzKpXlEkHuGlZzKiHwSmWgOeXqMzBaEwKrWpZnMdVjQbAg</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -233,7 +233,58 @@
     </row>
     </table>
     <!--Coop-END-->
+    <!--Member-START-->
+    <table name="member">
+        <column>id</column>
+        <column>coop_id</column>
+        <column>icNumber</column>
+        <column>membershipNo</column>
+        <column>description</column>
+        <column>enabled</column>
+        <column>name</column>
+        <column>phoneNo</column>
+        <column>gender</column>
+        <column>version</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="coop_id">-1</value>
+        <value description="icNumber">2423982342</value>
+        <value description="membershipNo">2423982342</value>
+        <value description="description">NjFvHtIhQwQjPfYlDyLyJpQxGxRrCxYiLbZoIhOzQbXwDsKmEiRsClKdUvPxXwCpBuRaCdYoEwDoAiIlXuQzJnSqInEvXmNgLwUnDgTzScUtXsChWcEyNcSzDsGtOlCvXtMkRyGyPoMwVgEfSgSjAnVpHzQmLhQiEmFaDgVgMsJlHqMeEhBoJsXjGiMkRgOwGlLyGqZo</value>
+        <value description="enabled">0</value>
+        <value description="name">ClFcWsCrExMnYcHjQgTuMhSnYhBeBgWeBbMbXlIqOuZqNsNxMt</value>
+        <value description="phoneNo">IjZcLjLgMtHy</value>
+        <value description="gender">M</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="coop_id">-1</value>
+        <value description="icNumber">2423982344</value>
+        <value description="membershipNo">2423982342</value>
+        <value description="description">QcYjLyPpUsGoPcSgWtZjRyVgLnUdVrVaMqOfGoFfOuReLqRsEuYeYzGeVfMcEgNbCxBuKnAcMjNbNxJkYwZzUrTwAwLfEkDhZnOnMrJeTvEvRpFdCbEcEpKiNoJgMkQyCwQyFxLoRjJnWcSvTyIvRcJxJuZsOzFgImHxIiDgHsLjRlAmTfMrBcRhPgZjJiEvGeGaFfHs</value>
+        <value description="enabled">0</value>
+        <value description="name">GcKvIrSsSyVbIrXxMbOrNtPuIdFjYvAdXrMzQlQyErOaVkLqOe</value>
+        <value description="phoneNo">WdObOzZmRoWw</value>
+        <value description="gender">M</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="coop_id">-1</value>
+        <value description="icNumber">2423982343</value>
+        <value description="membershipNo">2423982342</value>
+        <value description="description">VwWqPnSxKmLvQqRfZdWgWpIiVuWtSsKmDrKyOfFsVdIaBmMiGnOqIjKtMpRaIrRbGgKvJmCfBcLsQoLlCpRuZkSeHkGqGxNlHpTiFhNdKpDvQvGsQzUeBmNgMmUhPhLvEdDoMrPqKgIjEiYpKfHgRuNvAaKhYaZwQtQiOsTbEbBfMkXmLtFaWrJwWhXdRzZrXzWfFxRr</value>
+        <value description="enabled">0</value>
+        <value description="name">AwYbEwJrGpNhArUjVbEqFaEwJmEmEkHbIvCmBxWtHoMqPlPtOg</value>
+        <value description="phoneNo">MgCzTxUvImVg</value>
+        <value description="gender">M</value>
+        <value description="version">1</value>
+    </row>
+    </table>
+    <!--Member-END-->
 </dataset>
+
 
 
 

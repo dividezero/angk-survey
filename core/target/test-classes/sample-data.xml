@@ -186,7 +186,7 @@
     <!--Coop-START-->
     <table name="coop">
         <column>id</column>
-        <column>coopId</column>
+        <column>coopCode</column>
         <column>description</column>
         <column>enabled</column>
         <column>incorporatedDate</column>
@@ -197,7 +197,7 @@
         <column>version</column>
     <row>
         <value description="id">-1</value>
-        <value description="coopId">KhE</value>
+        <value description="coopCode">KhE</value>
         <value description="description">NvIaKqFgLqHcTfGmBtViPoPaRkIqDhKyCuUePfDiScFxVrGlEkSbAwIqFcDoDrLeGoSdHrTpWgRdPbHeLkJbTiBwHaCsWyUgQvUuSmPdKfPdOnOrIvHgEvMsYpDnEpKhRcEdAiHgXzWmZtChLdLcNgHyQaNoTlJrFoGbZpDtTpZgVqIdSzMtMfIqIzCmPsClFbHoIbZf</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -209,7 +209,7 @@
     </row>
     <row>
         <value description="id">-2</value>
-        <value description="coopId">YoV</value>
+        <value description="coopCode">YoV</value>
         <value description="description">TeXpKyWyLrNoMoXtShPoFxYaCjUaNeXdZwCnTgCtVpTuUeJtDyFiSuWdUtVtOeQeNaDkUcGkRoVnWsFiCsLhTgHkRqCuZwNlBgGxElHqVbUkJmVsKxVnVwDhEbUsMjXnPoBlGlDaLyBhQeKgPvHmGvFwMhEsWdQvNjOfPhDnFcVaRoUtMdQvKqMeKjJkLdIsUmRxZhOm</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -221,7 +221,7 @@
     </row>
     <row>
         <value description="id">-3</value>
-        <value description="coopId">JsL</value>
+        <value description="coopCode">JsL</value>
         <value description="description">LeUpExPqWaQuEaAkAcPrLyAgLpYgRrRrHnHkFiGcXhTgCvGeYnKbNcYnZvCgFyFaYpGlGdRoSkEuRxJwRjNcPgGiJoTgSbYfLnZsReZcVyVbFnHtIxNoNxLbViUfZqBbNcLpJlVnQdDuDlFdYsAfYaEbWlSfIfIpPlAlWiMyIoIcRaZdBwYlXlSpDqXeIqJpKqAyRrSk</value>
         <value description="enabled">0</value>
         <value description="incorporatedDate">2014-08-17</value>
@@ -233,7 +233,58 @@
     </row>
     </table>
     <!--Coop-END-->
+    <!--Member-START-->
+    <table name="member">
+        <column>id</column>
+        <column>coop_id</column>
+        <column>description</column>
+        <column>enabled</column>
+        <column>gender</column>
+        <column>icNumber</column>
+        <column>membershipNo</column>
+        <column>name</column>
+        <column>phoneNo</column>
+        <column>version</column>
+    <row>
+        <value description="id">-1</value>
+        <value description="coop_id">-1</value>
+        <value description="description">BtNrZbDlQyRtMrMrUfUuHiDgJxBuFnOaZgOgHaWiZcEkPzRiBbYmYrEgFxBpPmNbDmFqDyLeFnOaWySgVnKnAyWfDxKmMvRbFyXrUuLvVtFfMnIjBxYcPiAgDhUwQkLbTtVfOhNcKxDySdAcRuEpFhBsEpLfCsAiJnEmCmDyKnFlHwIgEnHmGiUtBzKhGzCoKuPdIkUu</value>
+        <value description="enabled">true</value>
+        <value description="gender">U</value>
+        <value description="icNumber">UcKsHfFbCdHu</value>
+        <value description="membershipNo">SyIfZtKpEd</value>
+        <value description="name">TmMyJeBgZfWgOeAwDaSlWpVhMbOkDnOlHtZdLsTiSgQgIjVlUo</value>
+        <value description="phoneNo">VsAnEvPgKyZn</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-2</value>
+        <value description="coop_id">-2</value>
+        <value description="description">WzQpUnCbUlXiCjHwJsEcCcWgVqGbOyAlVyFbMrAvYyNrHmBtHeSlAyDfBoRlZxCkRlGbAxWdZpNhXfKpCjQsPvVwUjWeZsZaWyPzKdQaTcWxRnItWhXcRjOnCvCmQkViOnVhXhQhIjGiIeNiAmMgChXdKuXnHbBmDqBcQmFaOaKaJxSrIsRkSlNfVoTgVjPmUnBuHpHe</value>
+        <value description="enabled">true</value>
+        <value description="gender">D</value>
+        <value description="icNumber">PiKdUzOcRyRv</value>
+        <value description="membershipNo">AoJoKaVpXs</value>
+        <value description="name">KiIjHgEiKoRxUdUxDqArYwYfNuOiWhErRgDdArNqMtJvOsWcTz</value>
+        <value description="phoneNo">UoMfRmZuFbEz</value>
+        <value description="version">1</value>
+    </row>
+    <row>
+        <value description="id">-3</value>
+        <value description="coop_id">-3</value>
+        <value description="description">OxPrOiGoKnIiYqYyHqCdXnLmBkJbKmQwNtQcOoIoClTmOuLiKfCyXyJpMwKkWaVzGbSlMyHdNpBrArFdEvGnNuOuRfSxKrOpGtFrZhMiVkBsYgPlWuDhAgMtAzPgYuJaMxElStPuEtYeLcSwTpWjSpCuZyUhPxRpUuSvTuXrQuYcElZeCkJwFvKkWpAlLnTuNrOoNyNp</value>
+        <value description="enabled">true</value>
+        <value description="gender">Z</value>
+        <value description="icNumber">NiXhMsDrRmYt</value>
+        <value description="membershipNo">ThQcPmEfVc</value>
+        <value description="name">QqGaHwGbWdAtMcRyOcDoKdKwEjIrUkVxNtYgFlGfZpUkVnSpPw</value>
+        <value description="phoneNo">UgHoLwIrYqKl</value>
+        <value description="version">1</value>
+    </row>
+    </table>
+    <!--Member-END-->
 </dataset>
+
 
 
 

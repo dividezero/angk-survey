@@ -11,7 +11,6 @@ import javax.persistence.Table;
 import javax.persistence.Version;
 import javax.xml.bind.annotation.XmlRootElement;
 
-import org.hibernate.search.annotations.DocumentId;
 import org.hibernate.search.annotations.Field;
 import org.hibernate.search.annotations.Indexed;
 
@@ -20,6 +19,7 @@ import org.hibernate.search.annotations.Indexed;
  */
 @Entity
 @Table(name = "contact_person")
+@Indexed
 @XmlRootElement
 public class ContactPerson extends BaseObject implements Serializable {
 	private static final long serialVersionUID = 3832626162173359416L;

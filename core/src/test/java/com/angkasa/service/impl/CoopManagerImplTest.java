@@ -60,7 +60,7 @@ public class CoopManagerImplTest extends BaseManagerMockTestCase {
         //given
         final Coop coop = new Coop();
         // enter all required fields
-        coop.setCoopId("PoE");
+        coop.setCoopCode("PoE");
         coop.setName("RkMvXgSqDeRsKqOpRaItPjTqVgOrZsPaRdIxPoDtYfTmLsPuMv");
         coop.setPhoneNo("WgNzGdYiIsOz");
         

@@ -1,5 +1,7 @@
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/MemberControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/CoopBusinessTypeFormControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/BaseControllerTestCase.java
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/MemberFormControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/UserControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/PasswordHintControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/ContactPersonFormControllerTest.java
@@ -10,6 +12,6 @@
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/listener/StartupListenerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/CoopBusinessTypeControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/ContactPersonControllerTest.java
-/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/SignupControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/UpdatePasswordControllerTest.java
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/SignupControllerTest.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/test/java/com/angkasa/webapp/controller/CoopFormControllerTest.java

@@ -20,12 +20,12 @@
 <form:form commandName="coop" method="post" action="coopform" cssClass="well"
            id="coopForm" onsubmit="return validateCoop(this)">
 <form:hidden path="id"/>
-    <spring:bind path="coop.coopId">
+    <spring:bind path="coop.coopCode">
     <div class="form-group${(not empty status.errorMessage) ? ' has-error' : ''}">
     </spring:bind>
-        <appfuse:label key="coop.coopId" styleClass="control-label"/>
-        <form:input cssClass="form-control" path="coopId" id="coopId"  maxlength="3"/>
-        <form:errors path="coopId" cssClass="help-block"/>
+        <appfuse:label key="coop.coopCode" styleClass="control-label"/>
+        <form:input cssClass="form-control" path="coopCode" id="coopCode"  maxlength="3"/>
+        <form:errors path="coopCode" cssClass="help-block"/>
     </div>
     <spring:bind path="coop.description">
     <div class="form-group${(not empty status.errorMessage) ? ' has-error' : ''}">

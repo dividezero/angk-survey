@@ -11,5 +11,6 @@
         <mapping class="com.angkasa.model.ContactPerson"/>
         <mapping class="com.angkasa.model.CoopBusinessType"/>
         <mapping class="com.angkasa.model.Coop"/>
+        <mapping class="com.angkasa.model.Member"/>
     </session-factory>
 </hibernate-configuration>

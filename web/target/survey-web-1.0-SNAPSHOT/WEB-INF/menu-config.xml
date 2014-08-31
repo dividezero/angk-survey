@@ -9,6 +9,7 @@
         <Menu name="AdminMenu" title="menu.admin" description="Admin Menu" roles="ROLE_ADMIN" page="/admin/users">
             <Item name="ViewUsers" title="menu.admin.users" page="/admin/users"/>
             <Item name="ActiveUsers" title="home.activeUsers" page="/admin/activeUsers"/>
+            <Item name="MemberMenu" title="memberList.title" page="/members"/>
             <Item name="CoopMenu" title="coopList.title" page="/coops"/>
             <Item name="CoopBusinessTypeMenu" title="coopBusinessTypeList.title" page="/coopBusinessTypes"/>
             <Item name="ContactPersonMenu" title="contactPersonList.title" page="/contactPersons"/>
@@ -17,6 +18,7 @@
         </Menu>
         <Menu name="Logout" title="user.logout" page="/logout" roles="ROLE_ADMIN,ROLE_USER"/>
     </Menus>
+
 
 
 

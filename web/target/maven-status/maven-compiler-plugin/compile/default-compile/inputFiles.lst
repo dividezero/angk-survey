@@ -1,6 +1,7 @@
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/taglib/LabelTag.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/UserController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/filter/LocaleRequestWrapper.java
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/MemberFormController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/ContactPersonController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/PasswordHintController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/UpdatePasswordController.java
@@ -10,11 +11,12 @@
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/CoopFormController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/SignupController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/taglib/OutTag.java
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/MemberController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/jsp/EscapeXmlELResolverListener.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/FileUploadController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/BaseFormController.java
-/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/UserFormController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/taglib/CountryTag.java
+/home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/controller/UserFormController.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/util/ValidationUtil.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/util/RequestUtil.java
 /home/hazlan/Source/angkasa/angk-survey/trunk/web/src/main/java/com/angkasa/webapp/listener/StartupListener.java

@@ -8,9 +8,11 @@ com/angkasa/dao/ContactPersonDaoTest.class
 com/angkasa/service/impl/LookupManagerImplTest.class
 com/angkasa/service/impl/CoopManagerImplTest.class
 com/angkasa/dao/CoopDaoTest.class
+com/angkasa/service/impl/MemberManagerImplTest.class
 com/angkasa/dao/hibernate/HibernateConfigurationTest.class
 com/angkasa/dao/RoleDaoTest.class
 com/angkasa/dao/CoopBusinessTypeDaoTest.class
+com/angkasa/dao/MemberDaoTest.class
 com/angkasa/dao/UserDaoTest.class
 com/angkasa/service/MailEngineTest.class
 com/angkasa/service/MockUserDetailsService.class

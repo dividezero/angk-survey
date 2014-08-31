@@ -21,9 +21,9 @@
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
-        <property name="url" value="jdbc:mysql://54.254.241.116/angkasa?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true"/>
+        <property name="url" value="jdbc:mysql://localhost/angkasa?createDatabaseIfNotExist=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;autoReconnect=true"/>
         <property name="username" value="angkasa"/>
-        <property name="password" value="angkasa@deimos"/>
+        <property name="password" value="angkasa"/>
         <property name="maxActive" value="100"/>
         <property name="maxWait" value="1000"/>
         <property name="poolPreparedStatements" value="true"/>

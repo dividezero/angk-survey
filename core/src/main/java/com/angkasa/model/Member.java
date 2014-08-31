@@ -34,8 +34,8 @@ public class Member extends BaseObject implements Serializable {
 	private Address address = new Address();
 
 	private String phoneNo;
-	private String coopId;
-	private String coop;
+	private Long coopId;
+	private Coop coop;
 	private String gender; // Constants.GENDER_MALE or Constants.GENDER_FEMALE
 	private String icNumber;
 	private String membershipNo;
@@ -95,22 +95,22 @@ public class Member extends BaseObject implements Serializable {
 		this.phoneNo = phoneNo;
 	}
 
-	@Column(name = "coop_id", nullable = false)
-	public String getCoopId() {
+	@Column(name = "coop_id", nullable = true)
+	public Long getCoopId() {
 		return coopId;
 	}
 
-	public void setCoopId(String coopId) {
+	public void setCoopId(Long coopId) {
 		this.coopId = coopId;
 	}
 
 	@ManyToOne
     @JoinColumn(name = "coop_id", referencedColumnName = "id", insertable = false, updatable = false)
-	public String getCoop() {
+	public Coop getCoop() {
 		return coop;
 	}
 
-	public void setCoop(String coop) {
+	public void setCoop(Coop coop) {
 		this.coop = coop;
 	}
 
@@ -132,7 +132,7 @@ public class Member extends BaseObject implements Serializable {
 		this.icNumber = icNumber;
 	}
 
-	@Column(name = "icNumber", nullable = false, length = 10)
+	@Column(name = "membershipNo", nullable = false, length = 15)
 	public String getMembershipNo() {
 		return membershipNo;
 	}

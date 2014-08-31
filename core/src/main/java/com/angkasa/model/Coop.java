@@ -136,7 +136,7 @@ public class Coop extends BaseObject implements Serializable {
 		return coopCode;
 	}
 
-	public void setCoopId(String coopCode) {
+	public void setCoopCode(String coopCode) {
 		this.coopCode = coopCode;
 	}
 
@@ -286,7 +286,7 @@ public class Coop extends BaseObject implements Serializable {
 		return "Coop [id=" + id + ", name=" + name + ", description="
 				+ description + ", address=" + address + ", contactPersons="
 				+ contactPersons + ", phoneNo=" + phoneNo + ", phoneNo2="
-				+ phoneNo2 + ", phoneNo3=" + phoneNo3 + ", coopId=" + coopCode
+				+ phoneNo2 + ", phoneNo3=" + phoneNo3 + ", coopCode=" + coopCode
 				+ ", coopBusinessTypes=" + coopBusinessTypes
 				+ ", incorporatedDate=" + incorporatedDate + ", version="
 				+ version + ", enabled=" + enabled + "]";

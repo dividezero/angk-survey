@@ -1,41 +1,38 @@
 package com.angkasa.dao;
 
-import com.angkasa.dao.BaseDaoTestCase;
-import com.angkasa.model.Coop;
+import static org.junit.Assert.assertNotNull;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
-
-import org.springframework.beans.factory.annotation.Autowired;
-
-import java.util.List;
+import com.angkasa.model.Coop;
 
 public class CoopDaoTest extends BaseDaoTestCase {
-    @Autowired
-    private CoopDao coopDao;
+	@Autowired
+	private CoopDao coopDao;
 
-    @Test(expected=DataAccessException.class)
-    public void testAddAndRemoveCoop() {
-        Coop coop = new Coop();
+	@Test(expected = DataAccessException.class)
+	public void testAddAndRemoveCoop() {
+		Coop coop = new Coop();
 
-        // enter all required fields
-        coop.setCoopId("WzL");
-        coop.setName("CuTaCbQoFdReFeOdKlHjJfUoAsJgRzRhKcFjIzWoUiKgVxDgWi");
-        coop.setPhoneNo("NgUiVaBbDoBg");
+		// enter all required fields
+		coop.setCoopCode("WzL");
+		coop.setName("CuTaCbQoFdReFeOdKlHjJfUoAsJgRzRhKcFjIzWoUiKgVxDgWi");
+		coop.setPhoneNo("NgUiVaBbDoBg");
 
-        log.debug("adding coop...");
-        coop = coopDao.save(coop);
+		log.debug("adding coop...");
+		coop = coopDao.save(coop);
 
-        coop = coopDao.get(coop.getId());
+		coop = coopDao.get(coop.getId());
 
-        assertNotNull(coop.getId());
+		assertNotNull(coop.getId());
 
-        log.debug("removing coop...");
+		log.debug("removing coop...");
 
-        coopDao.remove(coop.getId());
+		coopDao.remove(coop.getId());
 
-        // should throw DataAccessException 
-        coopDao.get(coop.getId());
-    }
+		// should throw DataAccessException
+		coopDao.get(coop.getId());
+	}
 }

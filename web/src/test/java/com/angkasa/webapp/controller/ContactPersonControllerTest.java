@@ -1,18 +1,17 @@
 package com.angkasa.webapp.controller;
 
-import com.angkasa.service.ContactPersonManager;
-import com.angkasa.model.ContactPerson;
-
-import com.angkasa.webapp.controller.BaseControllerTestCase;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.beans.factory.annotation.Autowired;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertTrue;
 
 import java.util.List;
 import java.util.Map;
 
 import org.junit.Test;
-import static org.junit.Assert.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
+
+import com.angkasa.service.ContactPersonManager;
 
 public class ContactPersonControllerTest extends BaseControllerTestCase {
     @Autowired
@@ -36,6 +35,6 @@ public class ContactPersonControllerTest extends BaseControllerTestCase {
         Map m = model.asMap();
         List results = (List) m.get("contactPersonList");
         assertNotNull(results);
-        assertEquals(3, results.size());
-    }
+		assertEquals(3, results.size());
+	}
 }

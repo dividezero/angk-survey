@@ -6,6 +6,7 @@ com/angkasa/webapp/jsp/EscapeXml.class
 com/angkasa/webapp/spring/ValidatorExtensionPostProcessor.class
 com/angkasa/webapp/controller/UpdatePasswordController.class
 com/angkasa/webapp/controller/ContactPersonController.class
+com/angkasa/webapp/controller/MemberFormController.class
 com/angkasa/webapp/controller/CoopFormController.class
 com/angkasa/webapp/controller/FileUploadController.class
 com/angkasa/webapp/controller/ContactPersonFormController.class
@@ -23,6 +24,7 @@ com/angkasa/webapp/util/ValidationUtil.class
 com/angkasa/webapp/filter/LocaleRequestWrapper.class
 com/angkasa/webapp/jsp/EscapeXmlELResolver$1.class
 com/angkasa/webapp/controller/SignupController.class
+com/angkasa/webapp/controller/MemberController.class
 com/angkasa/webapp/listener/UserCounterListener.class
 com/angkasa/webapp/taglib/ConstantsTei.class
 com/angkasa/webapp/taglib/ConstantsTag.class

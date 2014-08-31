@@ -81,8 +81,8 @@
         <!--CoopBusinessType-END-->
         <!--Coop-START-->
         <form name="coop">
-            <field property="coopId" depends="required">
-                <arg key="coop.coopId"/>
+            <field property="coopCode" depends="required">
+                <arg key="coop.coopCode"/>
             </field>
             <field property="name" depends="required">
                 <arg key="coop.name"/>
@@ -92,5 +92,15 @@
             </field>
         </form>
         <!--Coop-END-->
+        <!--Member-START-->
+        <form name="member">
+            <field property="name" depends="required">
+                <arg key="member.name"/>
+            </field>
+            <field property="phoneNo" depends="required">
+                <arg key="member.phoneNo"/>
+            </field>
+        </form>
+        <!--Member-END-->
     </formset>
 </form-validation>

@@ -39,7 +39,7 @@
     <display:column property="id" sortable="true" href="coopform" media="html"
         paramId="id" paramProperty="id" titleKey="coop.id"/>
     <display:column property="id" media="csv excel xml pdf" titleKey="coop.id"/>
-    <display:column property="coopId" sortable="true" titleKey="coop.coopId"/>
+    <display:column property="coopCode" sortable="true" titleKey="coop.coopCode"/>
     <display:column sortProperty="enabled" sortable="true" titleKey="coop.enabled">
         <input type="checkbox" disabled="disabled" <c:if test="${coopList.enabled}">checked="checked"</c:if>/>
     </display:column>
